@@ -13,7 +13,7 @@ How to:
 Why BTC prefix?
 ---------------
 
-It's actually a part of my [CoreBitcoin](http://github.com/oleganza/CoreBitcoin/tree/master/CoreBitcoin) project, but for licensing reasons not included (I do not want to bloat CoreBitcoin with many different licenses for people to worry about, OpenSSL is enough already).
+It is actually a part of my [CoreBitcoin](http://github.com/oleganza/CoreBitcoin) project, but for licensing reasons not included (I do not want to bloat CoreBitcoin with many different licenses for people to worry about, OpenSSL is enough already).
 
 
 LICENSE
