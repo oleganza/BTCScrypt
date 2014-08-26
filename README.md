@@ -1,13 +1,20 @@
 BTCScrypt
 =========
 
-Objective-C interface to Colin Percival's Scrypt with progress block.
+Objective-C interface to Colin Percival's Scrypt with progress block (yeah!).
 
-#### Usage:
+How to:
 
 1. Drop all the files in your project.
 2. Check only one of scrypt-*.c files (e.g. scrypt-nosse.c).
 3. Run BTCScrypt().
+
+
+Why BTC prefix?
+---------------
+
+It's actually a part of my [CoreBitcoin](http://github.com/oleganza/CoreBitcoin/tree/master/CoreBitcoin) project, but for licensing reasons not included (I do not want to bloat CoreBitcoin with many different licenses for people to worry about, OpenSSL is enough already).
+
 
 LICENSE
 -------
