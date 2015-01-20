@@ -45,7 +45,7 @@ void BTCScryptTestVectors()
                                                "fcd0069ded0948f8326a753a0fc81f17"
                                                "e8d3e0fb2e0d3628cf35e20c38d18906");
         
-        NSData* result = BTCScrypt(64, BTCDataWithUTF8String(""), BTCDataWithUTF8String(""), 16, 1, 1, nil);
+        NSData* result = BTCScrypt(64, BTCDataWithUTF8CString(""), BTCDataWithUTF8CString(""), 16, 1, 1, nil);
         
         NSCAssert([result isEqual:vector], @"Should match for N = 16, r = 1, p = 1");
     }
@@ -56,7 +56,7 @@ void BTCScryptTestVectors()
                                                "2eaf30d92e22a3886ff109279d9830da"
                                                "c727afb94a83ee6d8360cbdfa2cc0640");
         
-        NSData* result = BTCScrypt(64, BTCDataWithUTF8String("password"), BTCDataWithUTF8String("NaCl"), 1024, 8, 16, nil);
+        NSData* result = BTCScrypt(64, BTCDataWithUTF8CString("password"), BTCDataWithUTF8CString("NaCl"), 1024, 8, 16, nil);
         
         NSCAssert([result isEqual:vector], @"Should match for N = 16, r = 8, p = 16");
     }
@@ -67,7 +67,7 @@ void BTCScryptTestVectors()
                                                "d5432955613f0fcf62d49705242a9af9"
                                                "e61e85dc0d651e40dfcf017b45575887");
         
-        NSData* result = BTCScrypt(64, BTCDataWithUTF8String("pleaseletmein"), BTCDataWithUTF8String("SodiumChloride"), 16384, 8, 1, nil);
+        NSData* result = BTCScrypt(64, BTCDataWithUTF8CString("pleaseletmein"), BTCDataWithUTF8CString("SodiumChloride"), 16384, 8, 1, nil);
         
         NSCAssert([result isEqual:vector], @"Should match for N = 16384, r = 8, p = 1");
     }
@@ -78,7 +78,7 @@ void BTCScryptTestVectors()
                                                "8e56fd8f4ba5d09ffa1c6d927c40f4c3"
                                                "37304049e8a952fbcbf45c6fa77a41a4");
         
-        NSData* result = BTCScrypt(64, BTCDataWithUTF8String("pleaseletmein"), BTCDataWithUTF8String("SodiumChloride"), 1048576, 8, 1, nil);
+        NSData* result = BTCScrypt(64, BTCDataWithUTF8CString("pleaseletmein"), BTCDataWithUTF8CString("SodiumChloride"), 1048576, 8, 1, nil);
         
         NSCAssert([result isEqual:vector], @"Should match for N = 1048576, r = 8, p = 1");
     }
